@@ -1,0 +1,133 @@
+
+.row_header {
+ background:#CCCCCC;
+ font-weight:bold;
+ padding:10px;
+}
+.even {
+ background:#F1F1F1;
+}
+.odd {
+ background:#FFFFFF;
+}
+
+.sortable_group {
+ background:#F1F1F1;
+ padding:5px;
+ border:1px solid  #cccccc;
+ font-style:oblique;
+}
+
+#simple_cck a {
+  text-decoration:none;
+  font-family:fantasy;
+  color:#800000;
+}
+
+#simple_cck a:hover {
+  text-decoration:none;
+  font-family:fantasy;
+  color:#800080;
+}
+
+.sortable_menu {
+ background:#2EFEC8;
+ font-family:cursive;
+ font-style:oblique;
+ 
+}
+
+.sortable_menu:hover,.sortable_group:hover, .sortable_field:hover {
+ cursor:crosshair;
+ 
+}
+
+.sortable_group > td {
+ border-top:1px solid  #C0C0C0;
+ border-bottom:1px solid  #FFFFFF;
+}
+
+
+.sortable_field {
+ background:#CCCCCC;
+ padding:5px;
+ border:1px solid  #F1F1F1;
+ font-style:oblique;
+}
+
+.sortable_field > td {
+ border-top:1px solid  #C0C0C0;
+ border-bottom:1px solid  #FFFFFF;
+}
+
+.sortable_field > td > input,.sortable_field > td > select {
+ border:1px solid #000;
+}
+
+.sortable_group > td > input,.sortable_group > td > select {
+ border:1px solid #000;
+}
+
+
+.widget_tp {
+ position:absolute;
+ z-index:10000;
+ width:100%;
+}
+
+.settings {
+  text-decoration:none;
+  color:#C0C000;
+  padding:5px;
+  border:1px groove #C0C0C0;
+  border-radius:5px;
+}
+
+.settings:hover {
+  text-decoration:none;
+  color:#FFF;
+  background:#C0C0C0;
+  padding:5px;
+  border:1px groove;
+  border-radius:5px;
+}
+
+
+
+.settings2 {
+  text-decoration:none;
+  color:#C0C000;
+  padding:5px;
+  border:1px groove #C0C0C0;
+  border-radius:5px;
+}
+
+.settings2:hover {
+  text-decoration:none;
+  color:#FFF;
+  background:#C0C0C0;
+  padding:5px;
+  border:1px groove;
+  border-radius:5px;
+}
+
+.menu_edit, .menu_delete, .field_edit,.field_delete, .fields_link {
+  text-decoration:none;
+  color:#FFF;
+  background:#C0C0C0;
+  padding:5px;
+  border:1px groove;
+  border-radius:5px;
+}
+
+.field_settings_div > table {
+  border:1px solid #cccccc;
+  margin-bottom:20px;
+  border-radius:10px;
+  width:80%;
+  
+}
+
+.field_settings_div > table > tr > td {
+  border-bottom:1px solid #cccccc;
+}
