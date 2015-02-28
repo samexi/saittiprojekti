@@ -31,126 +31,13 @@ $howmany = 5;
 	<div class="usersultra-dahsboard-left"> 
    
     
-  <div class="myavatar rounded">
+ 
         
-      <div class="pic" id="uu-backend-avatar-section">
-        
-            <?php echo $xoouserultra->userpanel->get_user_pic( $user_id, "", 'avatar', 'rounded', 'dynamic')?>
-            
-           
-            </div>
-            
-             <div class="btnupload">
-             <a class="uultra-btn-upload-avatar" href="#" id="uu-send-private-message" data-id="<?php echo $user_id?>"><span><i class="fa fa-camera fa-2x"></i></span><?php echo _e("Update Profile Image", 'xoousers')?></a>
-             </div>
-             
-            
-           <div class="uu-upload-avatar-sect" id="uu-upload-avatar-box">           
-            
-            <?php echo $xoouserultra->userpanel->avatar_uploader()?>         
-            
-            </div>
-           
-                      
-            
-      </div>
-        
-           <ul class="main_menu">
-           
-              <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('dashboard');?></li>
-              
-               <?php if(!in_array("account",$modules)){?>  
-               <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('account');?></li>
-               <?php }?>
-               
-                <?php if(!in_array("myorders",$modules)){?>  
-               <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('myorders');?></li>
-               <?php }?>
-               
-                 <?php if(!in_array("wootracker",$modules)){?>  
-               <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('wootracker');?></li>
-               <?php }?>
-               
-               <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('profile');?></li>             
-                              
-               <?php if(!in_array("messages",$modules)){?>           
-                
-                <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('messages');?></li>
-                
-                <?php }?>
-                
-				<?php if(!in_array("friends",$modules)){?>                 
-                <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('friends');?></li>
-                <?php }?>
-                
-                <?php if(!in_array("posts",$modules)){?>                 
-                <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('posts');?></li>
-                <?php }?>
-                
-                <?php if(!in_array("photos",$modules)){?>                 
-                <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('photos');?></li>           
-                <?php }?>
-                
-                <?php if(!in_array("videos",$modules)){?> 
-               <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('videos');?></li>
-               
-               
-               <?php }?>
-               <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('settings');?></li>
-               <li><?php echo $xoouserultra->userpanel->get_user_backend_menu('logout');?></li>
-           
-           </ul>
+
     </div>
     
-    
-	<div class="usersultra-dahsboard-center"> 
-    
-        <?php
-        //cutom message
-		
-		$message_custom = $xoouserultra->get_option('messaging_private_all_users');
-		
-		if($message_custom!="")
-		{
-			echo "<p><div class='uupublic-ultra-info'><p>".$message_custom."</p></div></p>";
-		
-		}
-		
-		?>
-    
-    
-            <?php 
-			
-			//dashboard
-			
-			   if($module=="dashboard" ||$module==""  ) 
-			   {
-			?> 
-            
-               <h1> <?php  _e('Hello','xoousers');?> <?php echo $current_user->display_name?>. <?php  _e('Welcome to your dashboard','xoousers');?></h1>     
-               
-               <p style="text-align:right"><?php  _e('Account Status','xoousers');?>: 	<?php echo $xoouserultra->userpanel->get_status($current_user->ID);?></p>    
-               
-               
-                 <?php if(!in_array("messages",$modules)){?>  
-             
-              <div class="expandable-panel xoousersultra-shadow-borers" id="cp-1">
-                                
-                      <div class="expandable-panel-heading">
-                              <h2><?php  _e('My Latest Messages','xoousers');?><span class="icon-close-open"></span></h2>
-                     </div>
-                     
-                      <div class="expandable-panel-content" >
-                     
-                       	<?php  $xoouserultra->mymessage->show_usersultra_latest_messages($howmany);?>
-                     
-                     
-                     </div>                    
-                     
-                     
-               </div>
-               
-               <?php }?>
+
+
 
    		 
          
