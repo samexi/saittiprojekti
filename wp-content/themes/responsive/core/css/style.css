@@ -170,7 +170,7 @@ hr.space {
 -------------------------------------------------------------- */
 html {
 	height: 100%;
-	background-image: url(../images/pattern.png)
+	/* background-image: url(../images/pattern.png) */
 }
 
 body {
@@ -485,6 +485,7 @@ input[type="email"] {
 	box-shadow: 0 1px 0 #fff, inset 0 1px 1px rgba(0, 0, 0, 0.2);
 	vertical-align: middle;
 	cursor: text;
+	border-radius: 10px;
 }
 
 select {
@@ -511,6 +512,7 @@ textarea {
 	-webkit-box-shadow: 0 1px 0 #fff, inset 0 1px 1px rgba(0, 0, 0, 0.2);
 	-moz-box-shadow: 0 1px 0 #fff, inset 0 1px 1px rgba(0, 0, 0, 0.2);
 	box-shadow: 0 1px 0 #fff, inset 0 1px 1px rgba(0, 0, 0, 0.2);
+
 }
 
 map area {
@@ -773,6 +775,7 @@ form div {
 	-moz-border-radius: 4px;
 	border-radius: 4px;
 	background-color: #fff;
+	border-radius: 10px;
 }
 
 .front-page #wrapper {
@@ -917,6 +920,7 @@ form div {
 	width: 99.893617021277%;
 	padding-bottom: 40px;
 	background-color: #fff;
+	border-radius: 10px;
 }
 
 #featured p {
@@ -1020,6 +1024,7 @@ form div {
 	padding: 20px;
 	border: 1px solid #e5e5e5;
 	background-color: #f9f9f9;
+	border-radius: 10px;
 }
 
 .widget-wrapper select,
@@ -1170,7 +1175,7 @@ form div {
 	font-weight: 700;
 	line-height: 23px;
 	text-align: left;
-	color: green;
+	color: #00b8c2;
 }
 
 .top-widget .widget-title h3 {
@@ -1285,6 +1290,7 @@ form div {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
+	border-radius: 10px;
 }
 
 .menu li {
@@ -2148,7 +2154,7 @@ input[type="submit"] {
 	white-space: nowrap;
 	text-decoration: none;
 	cursor: pointer;
-
+    border-radius: 10px;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#f9f9f9, endColorstr=#f1f1f1);
 }
 
@@ -2199,6 +2205,7 @@ input[type="submit"]:active {
 .call-to-action a.button {
 	padding: 15px 35px;
 	font-size: 24px;
+	border-radius: 10px;
 }
 
 .call-to-action a.button:hover {
@@ -2259,6 +2266,7 @@ a.blue:hover {
 	background-image: -o-linear-gradient(top, #7db7f0, #1874cd);
 	background-image: linear-gradient(top, #7db7f0, #1874cd);
 	text-shadow: 0 -1px 0 #115290;
+
 
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7db7f0, endColorstr=#1874cd);
 }
