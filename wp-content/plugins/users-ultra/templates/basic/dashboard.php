@@ -30,17 +30,8 @@ $howmany = 5;
 
 	<div class="usersultra-dahsboard-left"> 
    
-    
- 
-        
-
     </div>
     
-
-
-
-   		 
-         
           <?php if(!in_array("photos",$modules)){?>  
               <div class="expandable-panel xoousersultra-shadow-borers" id="cp-2">
                                 

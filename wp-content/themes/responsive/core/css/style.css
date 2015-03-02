@@ -2,6 +2,14 @@
 
 /* =Reset CSS (v2.0) http://meyerweb.com/eric/tools/css/reset/
 -------------------------------------------------------------- */
+
+/* Custom classit */
+
+.search-filter-results a {
+	background-color: red;
+	border: 1px solid black;
+	height: 80px;
+}
 html,
 body,
 div,

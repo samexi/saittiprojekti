@@ -8,9 +8,9 @@ if ( !defined( 'ABSPATH' ) ) {
 /**
  * Full Content Template
  *
-Template Name:  urakkahaku
+Template Name:  urakkaz
  *
- * @file           urakkahaku-page.php
+ * @file           urakkaz-page.php
  * @package        Responsive
  * @author         Emil Uzelac
  * @copyright      2003 - 2014 CyberChimps
@@ -42,6 +42,7 @@ get_header(); ?>
 				<?php get_template_part( 'post-meta', get_post_type() ); ?>
 
 				<div class="post-entry">
+					<?php echo do_shortcode('[searchandfilter id="79"]'); ?>
 					<?php the_content( __( 'Read more &#8250;', 'responsive' ) ); ?>
 					<?php wp_link_pages( array( 'before' => '<div class="pagination">' . __( 'Pages:', 'responsive' ), 'after' => '</div>' ) ); ?>
 				</div>
@@ -70,5 +71,7 @@ get_header(); ?>
 	?>
 
 </div><!-- end of #content-full -->
-
+<div class="search-results">
+	<?php echo do_shortcode('[searchandfilter id="79" show="results" class="search-result"]'); ?>
+</div>
 <?php get_footer(); ?>
